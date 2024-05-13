@@ -4,6 +4,7 @@ import { FaPhone } from "react-icons/fa6";
 import css from "./Contact.module.css";
 
 export const Contact = ({ contact }) => {
+  console.log(contact);
   return (
     <div className={css.container}>
       <div className={css.list}>
@@ -13,7 +14,7 @@ export const Contact = ({ contact }) => {
         </p>
         <p>
           <FaPhone />
-          {contact.phone}
+          {contact.number}
         </p>
       </div>
       <div>

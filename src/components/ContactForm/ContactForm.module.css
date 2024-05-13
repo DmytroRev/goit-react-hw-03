@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 4px;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.containerList {
+    margin-bottom: 20px;
+}
+
+.contactFormInput {
+    margin-top: 5px;
+    width: 294px;
+    height: 20px;
+}
+
+.btnForm {
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: silver;
+    transition: background-color 0.3s ease;
+}
+
+.btnForm:hover {
+    background-color: darkgray;
+}
+
+.error {
+    position: absolute;
+    top: 65px;
+    left: 14px;
+    color: red;
+}
+
+.errorNum {
+    position: absolute;
+        top: 133px;
+        left: 14px;
+        color: red;
+}
