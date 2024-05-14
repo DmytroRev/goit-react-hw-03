@@ -3,22 +3,21 @@ import { FaPhone } from "react-icons/fa6";
 
 import css from "./Contact.module.css";
 
-export const Contact = ({ contact }) => {
-  console.log(contact);
+export const Contact = ({ contact, onDelete }) => {
   return (
     <div className={css.container}>
       <div className={css.list}>
         <p className={css.listItem}>
-          <IoMdContact />
+          <IoMdContact className={css.icon} />
           {contact.name}
         </p>
         <p>
-          <FaPhone />
+          <FaPhone className={css.icon} />
           {contact.number}
         </p>
       </div>
       <div>
-        <button>Delete</button>
+        <button onClick={() => onDelete(contact.id)}>Delete</button>
       </div>
     </div>
   );
